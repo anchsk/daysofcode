@@ -59,7 +59,7 @@ export default function Credits() {
            <h2 style={{paddingBottom: "6px"}}>Chat App</h2>
             <p style={{fontSize: '14px'}}> Solution for a{' '}
             <a style={{borderBottom: '1px solid black'}}href='https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY'>
-              frontendmentors.io
+              frontendmentor.io
             </a>{' '}
             front end challenge.</p>
           </div>
