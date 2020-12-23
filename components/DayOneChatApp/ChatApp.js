@@ -1,9 +1,12 @@
 //https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY
 import styles from './style.module.scss'
-
+import GoBack from '../GoBack'
+import Credits from '../Credits'
 export default function ChatApp() {
   return (
     <main className={styles.main}>
+     <GoBack />
+     <Credits />
       <section className={styles.phone_wrapper}>
         <div className={styles.phone}>
           <div className={styles.app}>
