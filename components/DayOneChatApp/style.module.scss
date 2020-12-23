@@ -71,7 +71,7 @@ $laptop: 1000px;
       top: 80vh;
       width: 60vw;
       border-top-left-radius: 30vw;
-    border-top-right-radius: 30vw;
+      border-top-right-radius: 30vw;
     }
   }
 }
@@ -287,26 +287,29 @@ $laptop: 1000px;
       margin-right: 36px;
     }
     .button_send {
+      position: absolute;
+      //align-self: center;
       background: none;
       outline: none;
       border: none;
       border-image: none;
-      width: 24px;
-      height: 24px;
-      position: absolute;
-      align-self: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: block;
       right: 8px;
       background-color: $very-dark-desaturated-violet;
-      color: $white;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
+      
+      /* display: grid;
+      place-items: center; */
     }
     .arrow_right {
       @extend .arrow;
+      position: absolute;
+      bottom: 9px;
+      left: 8px;
       transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
-      margin-right: 2px;
     }
   }
 }

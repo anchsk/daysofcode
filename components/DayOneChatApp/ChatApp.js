@@ -9,7 +9,7 @@ export default function ChatApp() {
           <div className={styles.app}>
            {/* HEADER */}
             <div className={styles.app_header}>
-              <button>
+              <button type="button">
                 <i className={styles.arrow_left} />
               </button>
 
@@ -61,10 +61,10 @@ export default function ChatApp() {
                 </label>
               </div>
 
-              <form>
+              <form onSubmit={(e)=>{e.preventDefault()}}>
                 <input type='text' placeholder='Type a message...' />
-                <button className={styles.button_send} type="button">
-                  <i className={styles.arrow_right}/>
+                <button className={styles.button_send} type="submit">
+                  <i className={styles.arrow_right} />
                 </button>
               </form>
             </div>
