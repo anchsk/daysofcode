@@ -46,18 +46,18 @@ export default function ChatApp() {
                 Here are a few pictures. She’s a happy girl!
               </p>
               <p className={styles.message_out}>Can you make it?</p>
-              <p className={styles.message_in}>
+              <p className={`${styles.message_in} ${styles.message1}`}>
                 She looks so happy! The time we discussed works. How long shall
                 I take her out for?
               </p>
 
-              <div className={styles.message_price}>
+              <div className={`${styles.message_price} ${styles.message2}`}>
                 <input type='radio' id='minutes' name='price' value='30' />
                 <label htmlFor='minutes'>
                   30 minute walk<span>29$</span>
                 </label>
               </div>
-              <div className={styles.message_price}>
+              <div className={`${styles.message_price} ${styles.message3}`}>
                 <input type='radio' id='hour' name='price' value='60' />
                 <label htmlFor='hour'>
                   1 hour walk<span>49$</span>

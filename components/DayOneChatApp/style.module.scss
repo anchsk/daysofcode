@@ -16,7 +16,6 @@ $very-light-magenta: hsl(289, 100%, 72%);
 
 $laptop: 1000px;
 
-
 .main {
   font-size: 16px;
   font-family: 'Rubik', sans-serif;
@@ -65,7 +64,7 @@ $laptop: 1000px;
       left: -20vw;
       height: 80vh;
       border-bottom-left-radius: 30vw;
-    border-bottom-right-radius: 30vw;
+      border-bottom-right-radius: 30vw;
     }
     &::before {
       top: 80vh;
@@ -84,7 +83,7 @@ $laptop: 1000px;
 }
 
 .phone_wrapper {
-  //background-color: $light-grayish-violet;
+  //animation: appearFromTop 0.3s ease-in 0s 1;
   padding: 24px;
   z-index: 10;
   @media screen and (max-width: $laptop) {
@@ -103,7 +102,7 @@ $laptop: 1000px;
   border-radius: 40px;
   border: 14px solid $white;
   box-shadow: 0px 24px 40px -18px $dark-grayish-violet,
-  0px 0px 20px -14px $desaturated-dark-violet;
+    0px 0px 20px -14px $desaturated-dark-violet;
 
   &::before {
     content: '';
@@ -299,7 +298,7 @@ $laptop: 1000px;
       display: block;
       right: 8px;
       background-color: $very-dark-desaturated-violet;
-      
+
       /* display: grid;
       place-items: center; */
     }
@@ -317,6 +316,7 @@ $laptop: 1000px;
 .text_wrapper {
   padding: 24px 24px 24px 0;
   z-index: 10;
+  margin-left: 24px;
 
   h3 {
     color: $very-dark-desaturated-violet;
@@ -339,10 +339,50 @@ $laptop: 1000px;
     align-items: center;
     margin-top: 24px;
     margin-bottom: 100px;
+    margin-left: 0;
 
     p {
       text-align: center;
       padding: 0 18px;
     }
   }
+}
+
+/* ANIMATIONS */
+@keyframes appearFromTop {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.phone_wrapper {
+  animation: appearFromTop 0.3s ease-in 0s 1;
+}
+@keyframes messageAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.message1 {
+  opacity: 0;
+  animation: messageAnimation 0.4s ease-in 0.8s 1;
+  animation-fill-mode: forwards;
+}
+.message2 {
+  opacity: 0;
+  animation: messageAnimation 0.4s ease-in 1.2s 1;
+  animation-fill-mode: forwards;
+}
+.message3 {
+  opacity: 0;
+  animation: messageAnimation 0.4s ease-in 1.6s 1;
+  animation-fill-mode: forwards;
 }
