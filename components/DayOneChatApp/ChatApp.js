@@ -1,7 +1,8 @@
 //https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY
-import styles from './style.module.scss'
+import styles from './ChatApp.module.scss'
 import GoBack from '../GoBack'
 import Credits from '../Credits'
+
 export default function ChatApp() {
   return (
     <main className={styles.main}>

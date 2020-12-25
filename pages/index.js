@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
 
@@ -10,6 +9,12 @@ export default function Home() {
           <span className={styles.day}>01</span>{' '}
           <Link href='/day-01-chat-app'>
             <a>Chat App</a>
+          </Link>
+        </h2>
+        <h2>
+          <span className={styles.day}>02</span>{' '}
+          <Link href='/day-02-fylo-landing-page-dark'>
+            <a>Fylo Landing Page</a>
           </Link>
         </h2>
       </main>
