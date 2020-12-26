@@ -82,6 +82,7 @@ export const Card = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   max-width: 40ch;
+  padding: 0 12px;
 
   h3 {
     margin: 24px 0 12px 0;

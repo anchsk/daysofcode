@@ -8,7 +8,8 @@ export const Page = styled.div`
   height: fit-content;
   background-color: ${colors.darkBlueMain};
   color: ${colors.white};
-  h2, h3 {
+  h2,
+  h3 {
     font-family: 'Raleway';
   }
   p {
@@ -44,18 +45,24 @@ export const Nav = styled.nav`
 export const NavLink = styled.a`
   margin-left: 24px;
   cursor: pointer;
+  padding: 2px 0;
+  border-bottom: 1px solid transparent;
+  
+  flex-shrink: 0;
   &:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid white;
+    transition: border-bottom .3s ease-in;
   }
 `
 export const Button = styled.button`
+  position: relative;
   outline: none;
   border: none;
   border-image: none;
   display: block;
   height: 48px;
   width: 200px;
-  padding-top: 3px;
+  padding-top: 2px;
   border-radius: 24px;
   background: linear-gradient(to right, ${colors.cyan}, ${colors.blue});
   color: ${colors.white};
@@ -63,6 +70,18 @@ export const Button = styled.button`
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: ${colors.cyan};
+    mix-blend-mode: screen;
+    opacity: 0;
+    border-radius: 24px;
+  }
 
   ${(props) => {
     if (props.subscribe) {
@@ -71,12 +90,18 @@ export const Button = styled.button`
         height: 36px;
         border-radius: 18px;
         padding-top: 1px;
+        &::after {
+          border-radius: 18px;
+        }
       `
     }
   }}
 
   &:hover {
-    background: linear-gradient(to right, ${colors.cyan}, ${colors.cyan});
+    &:after {
+      opacity: 0.5;
+      transition: opacity .4s ease-in;
+    }
   }
 `
 export const Section = styled.section`
@@ -89,13 +114,11 @@ export const SectionContent = styled.div`
   width: 80%;
   margin: 0 auto;
   //height: inherit;
- // border: 1px solid green;
+  // border: 1px solid green;
 `
-
 
 export const SVGWrap = styled.div`
   display: grid;
   place-items: center;
   width: ${(props) => props.width};
 `
-

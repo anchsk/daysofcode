@@ -89,7 +89,7 @@ export const FooterSection = styled.footer`
   width: 100%;
   height: fit-content;
   background-color: ${colors.darkBlueFooter};
-  padding: 32px 0;
+  padding: 32px 0 64px 0;
   font-size: 14px;
 
   @media screen and ${devices.tablet} {
@@ -172,6 +172,7 @@ export const FooterNav = styled.div`
   ul {
     list-style: none;
     margin: 12px 0;
+    margin-left: 26px;
     li {
       white-space: nowrap;
       margin-bottom: 12px;
