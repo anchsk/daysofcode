@@ -22,8 +22,8 @@ export default function Fylo() {
         </Logo>
         <Nav>
           <NavLink href='#features'>Features</NavLink>
-          <NavLink href=''>Team</NavLink>
-          <NavLink href=''>Sign In</NavLink>
+          <NavLink href='#'>Team</NavLink>
+          <NavLink href='#'>Sign In</NavLink>
         </Nav>
       </Header>
       <Hero />
