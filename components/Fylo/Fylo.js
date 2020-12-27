@@ -35,3 +35,11 @@ export default function Fylo() {
     </Page>
   )
 }
+
+
+const Page = styled.div`
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  
+  `
