@@ -49,7 +49,7 @@ export const SectionSubscribe = styled(Section)`
 `
 
 export const Content = styled(SectionContent)`
-  width: 60%; //need fix
+  width: 70%; //need fix
   margin: 0 auto;
   background-color: ${colors.darkBlueIntro};
   padding: 24px;
@@ -68,16 +68,17 @@ export const Content = styled(SectionContent)`
     max-width: 48ch;
     margin-bottom: 20px;
   }
-  /* @media screen and ${devices.tablet} {
+   @media screen and ${devices.tablet} {
     width: 60%;
-  } */
+  } 
 `
 export const Form = styled.form`
-  width: 100%;
+  //width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 220px;
+  margin: 12px;
 
   input {
     height: 36px;
@@ -90,11 +91,13 @@ export const Form = styled.form`
   }
   button {
     width: 100%;
+    white-space: nowrap;
+
   }
 
   @media screen and ${devices.laptop} {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
     grid-column-gap: 12px;
     width: 70%;

@@ -27,17 +27,18 @@ export const Header = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 32px;
+  padding: 30px 30px 24px 30px;
   z-index: 1;
 
   @media screen and ${devices.tablet} {
     padding: 32px 48px;
+    font-size: 14px;
   }
 `
 export const Logo = styled.div`
   display: grid;
   place-items: center;
-  width: 120px;
+  width: 100px;
 
   @media screen and ${devices.tablet} {
     width: 180px;
@@ -51,7 +52,7 @@ export const Nav = styled.nav`
   justify-content: flex-end;
 `
 export const NavLink = styled.a`
-  margin-left: 24px;
+  margin-left: 14px;
   cursor: pointer;
   padding: 2px 0;
   border-bottom: 1px solid transparent;
@@ -60,6 +61,9 @@ export const NavLink = styled.a`
   &:hover {
     border-bottom: 1px solid white;
     transition: border-bottom .3s ease-in;
+  }
+  @media screen and ${devices.tablet} {
+    margin-left: 24px;
   }
 `
 export const Button = styled.button`
