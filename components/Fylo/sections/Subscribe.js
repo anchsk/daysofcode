@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { devices } from '../devices'
+import { devices } from '../../../styles/devices'
 import { colors } from '../variables'
 import { SectionContent, Button, Section } from '../styled'
 

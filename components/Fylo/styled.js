@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { device } from './devices'
+import { devices } from '../../styles/devices'
 import { colors } from './variables'
 
 export const Page = styled.div`
@@ -27,13 +27,21 @@ export const Header = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 24px;
+  padding: 24px 32px;
   z-index: 1;
+
+  @media screen and ${devices.tablet} {
+    padding: 32px 48px;
+  }
 `
 export const Logo = styled.div`
   display: grid;
   place-items: center;
   width: 120px;
+
+  @media screen and ${devices.tablet} {
+    width: 180px;
+  }
 `
 
 export const Nav = styled.nav`

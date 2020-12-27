@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { devices } from '../devices'
+import { devices } from '../../../styles/devices'
 import { colors } from '../variables'
 import { Section, Button, SectionContent } from '../styled'
 
