@@ -41,16 +41,16 @@ export default function Room() {
               <IconClose />
             </button>
             <li>
-              <a href=''>Home</a>
+              <a href='#'>Home</a>
             </li>
             <li>
-              <a href=''>Shop</a>
+              <a href='#'>Shop</a>
             </li>
             <li>
-              <a href=''>About</a>
+              <a href='#'>About</a>
             </li>
             <li>
-              <a href=''>Contact</a>
+              <a href='#'>Contact</a>
             </li>
           </ul>
         </Nav>
@@ -191,7 +191,8 @@ const Header = styled.header`
   height: 72px;
   @media screen and ${devices.tablet} {
     color: white;
-    padding: 32px 32px;
+    padding: 64px 32px;
+    font-size: 16px;
   }
 `
 
@@ -211,6 +212,10 @@ const Logo = styled.div`
     position: relative;
     width: fit-content;
     margin-right: 32px;
+    height: 20px;
+    svg {
+     height: 18px;
+    }
   }
 `
 

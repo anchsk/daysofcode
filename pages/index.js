@@ -12,6 +12,26 @@ export default function Home() {
       </Header>
       <Main>
         <Content>
+        <Card>
+            <Link href='/room'>
+              <A>
+                <ImageWrap>
+                  <Image
+                    src='/images/room-desktop.png'
+                    layout='fill'
+                    objectFit='cover'
+                  />
+                </ImageWrap>
+                <CardTitle>
+                  <Day>03</Day>
+                  <h2>Room e-commerce homepage with slider</h2>
+                </CardTitle>
+              </A>
+            </Link>
+            <CardDescription>
+              <p>Solution for a <a href='https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq'>frontendmentor.io</a> challenge. Made with styled-components.</p>
+            </CardDescription>
+          </Card>
           <Card>
             <Link href='/fylo'>
               <A>
