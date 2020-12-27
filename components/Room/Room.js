@@ -458,6 +458,7 @@ const Buttons = styled.div`
     }
     svg {
       height: 18px;
+      width: 100%;
     }
     &:hover {
       background-color: ${colors.veryDarkGray};
