@@ -32,7 +32,7 @@ export default function FyloData() {
           </p>
           <Bar>
             <Point></Point>
-            <Label start>0 GB</Label>
+            <Label start={true}>0 GB</Label>
             <Label end>1000 GB</Label>
           </Bar>
           <GBLeft>
@@ -116,9 +116,10 @@ const Button = styled.button`
   width: 48px;
   height: 48px;
   border-radius: 12px;
+  padding: 12px;
   background-color: ${colors.veryDarkBlue};
   margin-right: 12px;
-  > svg {
+   svg {
     width: 24px;
     height: 24px;
   }
