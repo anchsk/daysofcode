@@ -12,6 +12,28 @@ export default function Home() {
       </Header>
       <Main>
         <Content>
+        
+        <Card>
+            <Link href='/fylo-data'>
+              <A>
+                <ImageWrap>
+                  <Image
+                    src='/images/fylo-data-desktop.png'
+                    layout='fill'
+                    objectFit='cover'
+                  />
+                </ImageWrap>
+                <CardTitle>
+                  <Day>04</Day>
+                  <h2>Fylo data storage component</h2>
+                </CardTitle>
+              </A>
+            </Link>
+            <CardDescription>
+              <p>Solution for a <a href='https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n'>frontendmentor.io</a> challenge. Made with styled-components.</p>
+            </CardDescription>
+          </Card>
+        
         <Card>
             <Link href='/room'>
               <A>
