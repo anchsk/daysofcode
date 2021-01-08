@@ -42,6 +42,7 @@ export default function Home() {
                     src='/images/room-desktop.png'
                     layout='fill'
                     objectFit='cover'
+                    objectPosition='0% 0%'
                   />
                 </ImageWrap>
                 <CardTitle>
@@ -62,6 +63,7 @@ export default function Home() {
                     src='/images/fylo-desktop.png'
                     layout='fill'
                     objectFit='cover'
+                    objectPosition='0% 0%'
                   />
                 </ImageWrap>
                 <CardTitle>
@@ -82,7 +84,7 @@ export default function Home() {
                     src='/images/chat-desktop.png'
                     layout='fill'
                     objectFit='cover'
-                    objectPosition='50% 50%'
+                    objectPosition='0% 0%'
                   />
                 </ImageWrap>
                 <CardTitle>
