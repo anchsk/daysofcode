@@ -12,8 +12,38 @@ export default function Home() {
       </Header>
       <Main>
         <Content>
-        
-        <Card>
+          {/* https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw */}
+
+
+          <Card>
+            <Link href='/loopstudios'>
+              <A>
+                <ImageWrap>
+                  <Image
+                    src='/images/fylo-data-desktop.png'
+                    layout='fill'
+                    objectFit='cover'
+                  />
+                </ImageWrap>
+                <CardTitle>
+                  <Day>05</Day>
+                  <h2>Loopstudio landing page</h2>
+                </CardTitle>
+              </A>
+            </Link>
+            <CardDescription>
+              <p>
+                Solution for a{' '}
+                <a href='https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw'>
+                  frontendmentor.io
+                </a>{' '}
+                challenge. Made with styled-components.
+              </p>
+            </CardDescription>
+          </Card>
+
+
+          <Card>
             <Link href='/fylo-data'>
               <A>
                 <ImageWrap>
@@ -30,11 +60,17 @@ export default function Home() {
               </A>
             </Link>
             <CardDescription>
-              <p>Solution for a <a href='https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n'>frontendmentor.io</a> challenge. Made with styled-components.</p>
+              <p>
+                Solution for a{' '}
+                <a href='https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n'>
+                  frontendmentor.io
+                </a>{' '}
+                challenge. Made with styled-components.
+              </p>
             </CardDescription>
           </Card>
-        
-        <Card>
+
+          <Card>
             <Link href='/room'>
               <A>
                 <ImageWrap>
@@ -52,7 +88,13 @@ export default function Home() {
               </A>
             </Link>
             <CardDescription>
-              <p>Solution for a <a href='https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq'>frontendmentor.io</a> challenge. Made with styled-components.</p>
+              <p>
+                Solution for a{' '}
+                <a href='https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq'>
+                  frontendmentor.io
+                </a>{' '}
+                challenge. Made with styled-components.
+              </p>
             </CardDescription>
           </Card>
           <Card>
@@ -73,7 +115,13 @@ export default function Home() {
               </A>
             </Link>
             <CardDescription>
-              <p>Solution for a <a href='https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd'>frontendmentor.io</a> challenge. Made with styled-components.</p>
+              <p>
+                Solution for a{' '}
+                <a href='https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd'>
+                  frontendmentor.io
+                </a>{' '}
+                challenge. Made with styled-components.
+              </p>
             </CardDescription>
           </Card>
           <Card>
@@ -94,7 +142,13 @@ export default function Home() {
               </A>
             </Link>
             <CardDescription>
-            <p>Solution for a <a href='https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY'>frontendmentor.io</a> challenge. SCSS modules & CSS animations</p>
+              <p>
+                Solution for a{' '}
+                <a href='https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY'>
+                  frontendmentor.io
+                </a>{' '}
+                challenge. SCSS modules & CSS animations
+              </p>
             </CardDescription>
           </Card>
         </Content>
