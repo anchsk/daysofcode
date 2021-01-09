@@ -60,8 +60,6 @@ const FooterSection = styled.footer`
   margin-top: 120px;
   color: white;
   padding: 48px;
-
-  
 `
 
 const FooterNav = styled.div`
@@ -80,20 +78,42 @@ const FooterNav = styled.div`
   }
 
   @media screen and ${devices.tablet} {
-   display: grid;
-   grid-template-areas: 'logo icons'
-   'menu text';
-   grid-gap: 12px;
+    display: grid;
+    grid-template-areas:
+      'logo icons'
+      'menu text';
+    grid-gap: 12px;
 
-   ul {
-    grid-area: menu;
-    flex-direction: row;
-    margin-bottom: 0;
+    ul {
+      grid-area: menu;
+      flex-direction: row;
+      margin-bottom: 0;
 
-    li {
-     margin-right: 12px;
+      li {
+        margin-right: 12px;
+        cursor: pointer;
+        position: relative;
+        padding: 0;
+
+        &:after {
+          opacity: 0;
+          content: '';
+          display: block;
+          position: absolute;
+          width: 50%;
+          height: 2px;
+          bottom: -5px;
+          background-color: white;
+          transform: translateX(50%);
+        }
+        &:hover {
+          &:after {
+            opacity: 1;
+            transition: opacity 0.3s ease-in;
+          }
+        }
+      }
     }
-   }
   }
 `
 
@@ -103,8 +123,8 @@ const LogoWrap = styled.div`
   width: 160px;
   margin-bottom: 32px;
   @media screen and ${devices.tablet} {
-   grid-area: logo;
-   margin-bottom: 0;
+    grid-area: logo;
+    margin-bottom: 0;
   }
 `
 const Icons = styled.div`
@@ -112,11 +132,10 @@ const Icons = styled.div`
   flex-direction: row;
   margin-bottom: 36px;
   @media screen and ${devices.tablet} {
-  margin-bottom: 0;
-  justify-content: flex-end;
-  width: 100%;
+    margin-bottom: 0;
+    justify-content: flex-end;
+    width: 100%;
   }
-  
 `
 
 const IconWrap = styled.div`
@@ -125,14 +144,33 @@ const IconWrap = styled.div`
   width: 24px;
   height: 24px;
   margin-right: 18px;
+  cursor: pointer;
+  position: relative;
+  //border: 1px solid yellow;
   &:last-child {
-   margin-right: 0;
+    margin-right: 0;
+  }
+  &:after {
+    opacity: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: -5px;
+    background-color: white;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+      transition: opacity 0.3s ease-in;
+    }
   }
 `
 const Text = styled.p`
   color: ${colors.darkGray};
   @media screen and ${devices.tablet} {
-   width: 100%;
-   text-align: right;
+    width: 100%;
+    text-align: right;
   }
 `

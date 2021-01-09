@@ -156,6 +156,12 @@ const CardText = styled.div`
   font-size: 24px;
   padding: 12px;
   font-weight: 300;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(transparent, white);
+    color: black;
+    transition: color 0.3s ease-in;
+  }
 `
 
 const ButtonSeeAll = styled.button`

@@ -20,14 +20,15 @@ export default function Home() {
               <A>
                 <ImageWrap>
                   <Image
-                    src='/images/fylo-data-desktop.png'
+                    src='/images/loopstudios-desktop.jpg'
                     layout='fill'
                     objectFit='cover'
+                    objectPosition='0 20%'
                   />
                 </ImageWrap>
                 <CardTitle>
                   <Day>05</Day>
-                  <h2>Loopstudio landing page</h2>
+                  <h2>Loopstudios landing page</h2>
                 </CardTitle>
               </A>
             </Link>
